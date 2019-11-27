@@ -1,0 +1,12 @@
+[Unit]
+Description=LyricsBot: Post a verse of a song to twitter
+
+[Service]
+Type=oneshot
+EnvironmentFile=/path/to/lyricsbot/config/lyricsbot-keys
+WorkingDirectory=/path/to/lyricsbot/
+ExecStart=/bin/bash scripts/run-bot-once.sh
+Restart=no
+
+[Install]
+WantedBy=default.target

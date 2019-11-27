@@ -1,0 +1,10 @@
+[Unit]
+Description=LyricsBot: Post a verse of a song to twitter every hour
+
+[Timer]
+Persistent=false
+OnCalendar=hourly
+Unit=lyricsbot.service
+
+[Install]
+WantedBy=timers.target
