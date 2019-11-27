@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/bin/pipenv run ./lyricsbot.py $1
+/usr/local/bin/pipenv run ./lyricsbot.py $1
